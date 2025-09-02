@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="./images/bookmarkfavicon.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmark</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&family=Amatic+SC:wght@400;700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Libertinus+Mono&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./CSS/all.min.css" />
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+  <link rel="stylesheet" href="./CSS/style.css" />
+</head>
+<body>
+    <section class="vh-100 sec pt-5 position-relative">
+      <div class="container">
+      <div class="content">
+        <h1 class="bookmark mx-auto mb-5 mt-3">Bookmarker</h1>
+        </div>
+        <hr class="hr mx-auto mb-4"/>
+        <h2 class="text-center"><span class="one"><i class="fa-solid fa-bookmark fa-md"></i> Bookmark your</span> <span class="two">favorite sites <i class="fa-solid fa-bookmark fa-md"></i></span></h2>
+        <div class="form position-relative">
+  <div class="mb-3">
+    <label for="siteName" class="form-label"><i class="fa-solid fa-book-bookmark"></i>&nbsp; Site Name</label>
+    <input type="text" class="form-control" id="siteName" aria-describedby="emailHelp" placeholder="Bookmark Name" />
+  </div>
+  <div class="mb-3">
+    <label for="siteURL" class="form-label"><i class="fa-solid fa-link"></i>&nbsp; Site URL</label>
+    <input  class="form-control" id="siteURL" placeholder="Website URL" />
+  </div>
+  <button type="submit" class="btn position-relative start-50 translate-middle-x myBtn" id="myBtn">Submit</button>
+  </div>
+  <hr class="hr"/>
+   <table class="w-100 bg-light text-center" id="table">
+  <thead>
+    <tr>
+      <th>index</th>
+      <th>Website Name</th>
+      <th>Visit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody id="tableBody">
+    <!-- <tr>
+      <td>1</td>
+      <td>ay haga</td>
+      <td><a href=""><button class="btn btn-success">Visit</button> </a></td>
+      <td><a href=""><button class="btn btn-danger">Delete</button> </a></td>
+    </tr> -->
+  </tbody>
+ </table>
+ <div class="notValidation bg-light p-4 position-absolute top-50 start-50 translate-middle d-none" id="validationWindow">
+  <div class="parent d-flex mb-4">
+<div class="child bg-danger"></div>
+<div class="child bg-warning"></div>
+<div class="child bg-success"></div>
+<button class=" ms-auto" id="cancel"><i class="fa-solid fa-xmark fa-xl mt-2"></i></button>
+</div>
+<h5 class="mb-4">Site Name or Url is not valid, Please follow the rules below :</h5>
+<p class="mb-4"><span><i class="fa-solid fa-right-long fa-sm"></i></span>Site name must contain at least 3 characters</p>
+<p><span><i class="fa-solid fa-right-long fa-sm"></i></span>Site URL must be a valid one</p>
+ </div>
+</div>
+    </section>
+    <script src="./main.js"></script>
+</body>
+</html>
